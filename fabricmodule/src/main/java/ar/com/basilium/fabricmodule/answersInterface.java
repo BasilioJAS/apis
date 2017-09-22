@@ -1,4 +1,4 @@
-package ar.com.basilium.apis.fabric;
+package ar.com.basilium.fabricmodule;
 
 /**
  * Created by sader on 16/9/2017.

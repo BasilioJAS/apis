@@ -4,17 +4,15 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import ar.com.basilium.apis.fabric.answersInterface;
-import ar.com.basilium.apis.fabric.fabricInterface;
+//import ar.com.basilium.apis.fabric.answersInterface;
+//import ar.com.basilium.apis.fabric.fabricInterface;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-
+import fabri
 public class MainActivity extends AppCompatActivity {
 
     CallbackManager callbackManager ;
@@ -23,15 +21,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        final Fabric fabric = new Fabric.Builder(this).kits(new Crashlytics()).debuggable(true).build();
   //      Fabric.with(fabric);
+     //   FacebookSdk.setApplicationId("788314874659500");
+      //  FacebookSdk.sdkInitialize(getApplicationContext());
+
         fabricInterface.getInstance().init(this, false);
 
-        setContentView(R.layout.activity_main);
+      //  setContentView(R.layout.activity_main);
 
 
         answersInterface.getInstance().logContentView();
         answersInterface.getInstance().logKeyMetric();
         fabricInterface.getInstance().logUser();
-        fabricInterface.getInstance().testCrash();
+        //fabricInterface.getInstance().testCrash();
 
 
         super.onCreate(savedInstanceState);

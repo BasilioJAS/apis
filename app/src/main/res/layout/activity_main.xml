@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context="ar.com.basilium.apis.MainActivity">
 
+    <RelativeLayout
+        android:layout_width="138dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,13 +23,18 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
+        android:id="@+id/_fb_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        tools:layout_editor_absoluteY="265dp"
-        tools:layout_editor_absoluteX="103dp" />
+        android:layout_gravity="center_horizontal" />
+    <!--<com.facebook.login.widget.LoginButton-->
+        <!--android:id="@+id/login_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--tools:layout_editor_absoluteY="265dp"-->
+        <!--tools:layout_editor_absoluteX="103dp" />-->
+
 
 </android.support.constraint.ConstraintLayout>
